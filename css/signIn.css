@@ -1,0 +1,219 @@
+body{
+	background-color: #f8f8f8;
+}
+.header{
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	background: white;
+	text-align: center;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+.header img{
+	margin: 0 auto;
+	padding: 5px 0;
+}
+
+.mainout{
+    background-color: #f8f8f8;
+}
+.main{
+	overflow: hidden;
+	position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+}
+.main .m_l{
+	position: absolute;
+    top: 109px;
+    left: 10px;
+    width: 400px;
+    height: 280px;
+}
+.main .m_r{
+    position: absolute;
+    top: 100px;
+    left: 600px;
+    width: 350px;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #eaeaea;
+    font-size: 12px;
+}
+.r1{
+    position: relative;
+    width: 350px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 52px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+.r1 .phonesign{
+      float: left;
+width: 175px;
+font-weight: 700;
+cursor: pointer;
+text-align: center;
+}  
+.r1 .mailsign{
+    float: left;
+    width: 175px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+}
+.r1 i{
+    position: absolute;
+    top: 17px;
+    left: 175px;
+    width: 0;
+    height: 20px;
+    border-right: solid 1px #ddd;
+}
+.textss{
+    width: 17px;
+    padding: 0 11px;
+    font-size:15px;
+    color: #666;
+}
+
+.r1 .active{
+    color: #e31436;
+}
+.r1 span:hover{
+    color: #e31436;
+}
+.r2{
+    width: 270px;
+    padding: 20px 40px 15px;
+    background-color: #fff;
+    box-sizing: content-box;
+    
+}
+.r22{
+    width: 270px;
+    padding: 20px 40px 15px;
+    background-color: #fff;
+    box-sizing: content-box;
+   
+}
+.formactive{
+    border :1px solid #4aafe9;
+}
+.texts{
+    border: none;
+    margin-left: 5px;
+}
+.form1{
+    height: 34px;
+    line-height: 30px;
+    border-color: rgb(213, 213, 213);
+    border-radius: 2px;
+    z-index: 19;
+    position: relative;
+    margin-bottom: 0px;
+    border: 1px solid #c5cddb;
+    background: #fff;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+.form3{
+    margin-top: 7px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.form3 a{
+    height: 36px;
+    display: block;
+    text-align: center;
+    background-color: #E31436;
+    color: #fff;
+    border-radius: 2px;
+    line-height: 36px;
+    font-size: 14px;
+}
+.form4{
+    padding: 0 0 15px 0;
+    line-height: 16px;
+    box-sizing: content-box;
+}
+.form4 a{
+    line-height: 16px;
+    display: inline-block;
+    float: right;
+    margin-top: 4px;
+}
+.form5{
+    font-size: 12px;
+    color: #999;
+    transform: translateY(-12px);
+}
+.form5 a{
+    font-size: 12px;
+    color: #999;
+    text-decoration: underline;
+}
+.r3{
+    padding: 10px 40px;
+    width: 270px;
+    height: 25px;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    background-color: #f8f8f8;
+    box-sizing: content-box;
+}
+.r3 a{
+    float: right;
+    color: #e31436;
+}
+.r3 span{
+    line-height: 25px;
+    font-size: 14px;
+}
+.r3 a:hover{
+    color: #e31436;
+}
+.footer{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background: white;
+    min-width: 1000px;
+}
+.signin1{
+    position: relative;
+    height: 52px;
+    font-size: 16px;
+    line-height: 52px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f8f8;
+    padding: 0 40px;
+    width: 270px;
+    box-sizing: content-box;
+}
+.fomsign{
+    width: 270px;
+    padding: 20px 40px 15px;
+    background-color: #fff;
+    box-sizing: content-box;
+}
+.sign1 span{
+    font-weight: 700;
+    color: #e31436;
+    font-size: 16px;
+    line-height: 52px;
+}
+.span222,.span333{
+    font-size: 12px;
+}
+.signin{
+    display: none;
+}
+.r22{
+     display: none;
+}

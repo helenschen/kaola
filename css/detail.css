@@ -1,0 +1,395 @@
+.main{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.shop{
+    margin: 0 auto;
+    width: 1090px;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 50px 0;
+}
+.sleft{
+    float: left;
+    width: 402px;
+    height: 488px;
+    position: relative;
+    display: inline;
+    z-index: 1000;
+}
+.box{
+    position: relative;
+    height: 400px;
+}
+.box img{
+    width: 400px;
+    height: 400px;
+    cursor: crosshair;
+}
+.shadow{
+    background-color: #000;
+    opacity: 0.3;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+    filter: alpha(opacity = 30);
+    *zoom: 1;
+    pointer-events: none;
+}
+.bigimg{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    zoom: 1;
+    z-index: 1001;
+    top: 0px;
+    left: 430px;
+    overflow: hidden;
+    border: #ededed 1px solid;
+    display: none;
+    background: #fff;
+}
+.bigimg img{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+}
+.sbox{
+    position: absolute;
+    height: 70px;
+    overflow: hidden;
+    top: 419px;
+    left: 35px;
+    width: 330px;
+}
+.cr,.cl{
+    display: inline-block;
+    z-index: 1000;
+    width: 33px;
+    height: 62px;
+    position: absolute;
+    padding: 1px 0;
+    margin: 0;
+    border: 1px solid #eee;
+    text-decoration: none;
+    font-size: 38px;
+    color: #666;
+    line-height: 62px;
+    text-align: center;
+    background-color: #fff;
+}
+.cr{
+    top: 421px;
+    right: 0;
+}
+.cl{
+    top: 421px;
+    left: 0;
+}
+.sbox ul{
+    width: 3000px;
+    position: absolute;
+    top: 0;
+    padding-left: 10px;
+    z-index: 2;
+    left: 0;
+}
+.sbox ul li{
+    float: left;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+}
+.sbox ul li img{
+    width: 64px;
+    height: 64px;
+}
+.sright{
+    position: relative;
+    float: left;
+    width: 658px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+.sright dl dt.dt1{
+    color: #333;
+    word-wrap: break-word;
+}
+.dt2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    word-wrap: break-word;
+    
+}
+.dt3{
+    margin-bottom: 11px;
+    color: #333;
+    line-height: 20px;
+    font-size: 13px;
+    word-wrap: break-word;
+}
+.dt4{
+    border-bottom: 1px dotted #ddd;
+    padding-bottom: 4px;
+    background-color: #f9f9f9;
+    background:rgb(249, 249, 249);
+    z-index: 22;
+    margin-bottom: 12px;
+}
+.dd1{
+    position: relative;
+    z-index: 11;
+    padding-top: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+.dd1 span:nth-child(1){
+    position: relative;
+    z-index: 11;
+    padding-top: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+    margin-right: 30px;
+}
+.dd2{
+    clear: both;
+    height: 24px;
+}
+.dd2 span{
+    float: left;
+}
+.dd2 span:nth-child(1){display: inline-block;
+width: 55px;
+vertical-align: middle;
+font-size: 12px;}
+.dd2 span:nth-child(3){margin: 0 10px;}
+.dd3 span:nth-child(1){
+    float: left;
+    width: 55px;
+}
+.dd3{
+    overflow: hidden;
+}
+.dd3 a{
+    margin: 0 10px;
+}
+.dd3 span,.dd3 a{
+    float: left;
+}
+.dd4 {
+    overflow: hidden;
+}
+.dd4 span{
+    float: left;
+    width: 55px;
+    line-height: 56px;
+}
+.dd5{
+    margin-left: 55px;
+}
+.dd5 p{
+    margin: 0;
+}
+.dd6 span{
+    float: left;
+    width: 55px;
+}
+.number{
+    width: 100px;
+    border: 1px solid #666;
+    float: left;
+}
+.number span{
+    float: left;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+}
+.numspan{
+    float: left;
+    width: 50px;
+    height: 22px;
+    text-align: center;
+    border: none;
+}
+.dd6,.dd7{
+    margin-top: 6px;
+    overflow: hidden;
+}
+.action{
+    float: left;
+}
+.dd2{
+    margin-top: 7px;
+    position: relative;
+    z-index: 10;
+}
+.dd3{
+    margin-top: 6px;
+}
+.dd4{
+    margin-top: 9px;
+    height: 65px;
+}
+.dd5{
+    margin-top: 6px;
+}
+.dd4 ul{
+    display: inline-block;
+}
+.dd4 ul li{
+    float: left;
+    display: inline;
+    background-color: #fff;
+    margin-right: 7px;
+    position: relative;
+    height: 52px;
+    white-space: nowrap;
+}
+.dd4 ul li img{
+    width: 50px;
+    height: 50px;
+}
+.m-p-s{
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 26px;
+    margin: 8px 0;
+    vertical-align: 4px;
+    float: left;
+    display: inline-block;
+    width: 75px;
+    color: #666;
+}
+.m-price-r{
+    float: left;
+    line-height: 48px;
+}
+.m-price-r span:nth-child(1){
+    font-size: 26px;
+    color: #e31436;
+    font-weight: bold;
+    vertical-align: baseline;
+    line-height: 1;
+    margin: 8px 0;
+}
+.m-price-r del{
+    font-size: 12px;
+    color: #999;
+}
+.m-more{
+    clear: both;
+    overflow: hidden;
+}
+.m-more span{
+    float: left;
+    display: inline-block;
+    width: 75px;
+    color: #666;
+    vertical-align: middle;
+    line-height: 22px;
+}
+.m-more div{
+    float: left;
+}
+.m-more div span{
+    cursor: default;
+    border-color: #e31436;
+    color: #e02036;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    width: 133px;
+    border: 1px solid #d9d9d9;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.buyit{
+    position: relative;
+    width: 156px;
+    height: 46px;
+    border: 2px solid #d41c44;
+    background-color: #ffeced;
+    color: #d31b44;
+    line-height: 46px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.buyit:hover{
+    text-decoration: none;
+     color: #d31b44;
+}
+.addcast{
+    width: 175px;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    background-color: #e31436;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.addcast:hover{
+    text-decoration: none;
+     color: white;
+     opacity: .8;
+}
+.cart{
+    position: fixed;
+   right: 50px;
+    top: 145px;
+    display: inline-block;
+    border: 1px solid #999;
+}
+.cart span{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 10px 0 10px;
+    color: #999;
+}
+.cart i{
+    position: absolute;
+    left: 45px;
+    top: 6px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    display: none;
+}
+.cart:hover{
+    background: #eee;
+}
+.cart:hover span{
+    color:red;
+}
+.shop{
+    position: relative;
+}

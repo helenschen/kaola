@@ -1,0 +1,108 @@
+div.main{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+div.dimg{
+    width: 100%;
+    overflow: hidden;text-align: center;
+}
+.dimg img{
+    margin: 0 auto;
+}
+body{
+    background: rgb(243, 243, 243);
+}
+.moudle{
+    width:1104px ;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.moudle ul{
+    width: 100%;
+    overflow: hidden;
+}
+.moudle ul li{
+    position: relative;
+    float: left;
+    width: 262px;
+    margin: 0 7px 14px;
+    background-color: #fff;
+    font-size: 12px;
+    overflow: hidden;
+}
+/* .goodwrap{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background-color: #fff;
+    border: 1px solid #f3f3f3;
+    border-bottom: none;
+} */
+.goodwrap a:nth-child(1){
+    display: block;
+    color: #333;
+}
+.goodwrap a:nth-child(1) img{
+    display: block;
+    width: 232px;
+    height: 232px;
+    padding: 15px 15px 10px;
+}
+.middle{
+    position: relative;
+    width: 234px;
+    padding: 0 14px 11px;
+}
+.middle ul li{
+    float: left;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin:0 4px 0 0;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.middle ul li img{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.btm{
+    width: 234px;
+    padding: 0 14px 11px;
+}
+.btm1{
+    height: 24px;
+    color: #e31436;
+    overflow: hidden;
+    font-size: 0;
+}
+.btm1 span{
+    display: inline-block;
+    margin-right: 2px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+}
+.btm1 del{
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: 2px;
+    color: #999;
+    font-size: 12px;
+}
+div.btm2{
+    width: 234px;
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.active{
+     word-wrap: break-word;
+    word-break: break-all;
+     white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

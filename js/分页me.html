@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			#box {
+				height: 32px;
+				width: 100%;
+				margin: 0 auto;
+				background: pink;
+			}
+
+			span {
+				float: left;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				border: #000000 solid 1px;
+			}
+
+			#nextspan {
+				margin-left: 5px;
+			}
+
+			ul {
+				float: left;
+			}
+
+			li {
+				height: 30px;
+				width: 30px;
+				border: #000000 solid 1px;
+				list-style: none;
+				float: left;
+				margin-left: 5px;
+				text-align: center;
+				line-height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+	class Page {
+		constructor(_config) {
+			this.firstPage = _config["firstPage"];
+			this.totalPage = _config["totalPage"];
+			this.showPage = _config["showPage"];
+			this.fixedMiddle = Math.floor(this.showPage / 2);
+			this.pageIndex = _config["pageIndex"];
+		}
+
+		create() { //创建页面元素
+			let _box = document.createElement("div"); //盒子
+			_box.id = "box";
+			document.getElementsByTagName("body")[0].appendChild(_box);
+
+			let _prevSpan = document.createElement("span");
+			_prevSpan.id = "prevspan";
+			_prevSpan.innerHTML = "前一页";
+			let _ul = document.createElement("ul");
+			_ul.id = "ul";
+			let _nextSpan = document.createElement("span");
+			_nextSpan.id = "nextspan"
+			_nextSpan.innerHTML = "后一页";
+
+			_box.appendChild(_prevSpan);
+			_box.appendChild(_ul);
+			_box.appendChild(_nextSpan);
+
+		}
+
+		ul() { //渲染ul
+			this.middlePage = Math.ceil(this.showPage / 2); //中间页码
+
+			let _start = this.firstPage;
+			if (this.pageIndex < this.middlePage) {
+				_start = this.firstPage;
+			} else {
+				_start = this.pageIndex - this.middlePage + 1;
+			}
+
+			if (this.pageIndex > this.totalPage - this.middlePage + 1) {
+				_start = this.totalPage - (this.middlePage - 1) * 2;
+			}
+
+			ul.innerHTML = "";
+			for (let i = _start; i <= this.showPage + _start - 1; i++) {
+				let _li = document.createElement("li");
+				_li.style.background = "";
+				_li.innerHTML = i;
+				if (i == this.pageIndex) {
+					_li.style.background = "red";
+				}
+				ul.appendChild(_li);
+			}
+
+			let _me = this;
+
+			for (let i = 0; i < ul.children.length; i++) { //点击变色
+				ul.children[i].onclick = function() {
+					prevspan.style.background = "";
+					nextspan.style.background = "";
+					_me.pageIndex = this.innerHTML;
+					if (_me.pageIndex == 1) {
+						prevspan.style.background = "gray";
+					}
+					if (_me.pageIndex >= _me.totalPage) {
+						nextspan.style.background = "gray";
+					}
+					_me.ul();
+				}
+			}
+		}
+
+		event() { //事件
+
+			let _me = this;
+
+			prevspan.onclick = function() {
+				prevspan.style.background = "";
+				nextspan.style.background = "";
+
+				if (_me.pageIndex > 1) {
+					_me.pageIndex--;
+					_me.ul();
+				}
+
+				if (_me.pageIndex == 1) {
+					prevspan.style.background = "gray";
+				}
+			}
+
+			nextspan.onclick = function() {
+				prevspan.style.background = "";
+				nextspan.style.background = "";
+
+				if (_me.pageIndex < _me.totalPage) {
+					_me.pageIndex++;
+					_me.ul();
+				}
+				
+				if (_me.pageIndex >= _me.totalPage) {
+					nextspan.style.background = "gray";
+				}
+			}
+
+			if (_me.pageIndex >= _me.totalPage) {
+				nextspan.style.background = "gray";
+			}
+
+			if (_me.pageIndex == 1) {
+				prevspan.style.background = "gray";
+			}
+		}
+	}
+
+	function main() {
+		let _page = new Page({
+			"firstPage": 1,
+			"totalPage": 30,
+			"showPage": 5,
+			"pageIndex": 1
+		});
+		_page.create();
+		_page.ul();
+		_page.event();
+
+		document.onselectstart = function(e) {
+			e = e || window.event;
+			e.preventDefault();
+			return;
+		};
+		document.onselect = function() {
+			return false;
+		}
+	}
+
+	window.onload = main;
+</script>
